@@ -11,7 +11,7 @@
         hey there partner! <br/>
     </div>
     <div>
-        <a href="/rango/add_category/">Add a new category</a><br/>
+        <a href="{% url 'add_category' %}">Add a new category</a><br/>
     </div>
     <div>
         {% if categories %}
@@ -37,7 +37,7 @@
         {% endif %}
     </div>
     <div>
-        <a href="/rango/about/">About</a> <br/>
+        <a href="{% url 'about' %}">About</a> <br/>
         <img src="{% static 'images/rango.jpg' %}" alt="Picture of Rango" />
     </div>
 </body>
